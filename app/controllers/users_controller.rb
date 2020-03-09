@@ -28,6 +28,7 @@ class UsersController < ApplicationController
     user.delete
     redirect_to :action => "index"
   end
+  
   private
   def user_params
     params.require(:user).permit(:name, :age)
